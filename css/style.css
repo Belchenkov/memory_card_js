@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Sriracha', cursive;
-    background: #fff;
+    font-family: 'Merriweather', serif;
+    background: url("../img/bg.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,18 +25,19 @@ h1 button {
     right: 0;
     transform: translate(120%, -50%);
     z-index: 2;
-    font-family: 'Sriracha', cursive;
+    font-family: 'Merriweather', serif;
 }
 
 .btn {
     cursor: pointer;
-    background-color: #fff;
+    background-color: #d6b566;
+    box-shadow: 0 0 2px #aaa;
     border: 1px solid #aaa;
     border-radius: 3px;
     font-size: 14px;
     margin-top: 20px;
     padding: 10px 15px;
-    font-family: 'Sriracha', cursive;
+    font-family: 'Merriweather', serif;
 }
 
 .btn-small {
@@ -114,6 +115,11 @@ h1 button {
     background: #fff;
 }
 
+.inner-card-front,
+.inner-card-back p {
+    text-align: center;
+}
+
 .inner-card-front {
     transform: rotateX(0deg);
     z-index: 2;
@@ -154,7 +160,7 @@ h1 button {
 .add-container {
     opacity: 0;
     z-index: -1;
-    background-color: #f0f0f0;
+    background: url("../img/bg.png");
     border-top: 2px solid #eee;
     display: flex;
     flex-direction: column;
